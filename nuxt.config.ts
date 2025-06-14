@@ -7,12 +7,6 @@ export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
 
-  imports: {
-    dirs: [
-      'composables/*/index.ts'
-    ]
-  },
-
   modules: [
     '@nuxt/eslint',
     '@nuxt/icon',
@@ -30,8 +24,10 @@ export default defineNuxtConfig({
     '@primevue/nuxt-module'
   ],
 
-  eslint: {
-    // options here
+  imports: {
+    dirs: [
+      'composables/*/index.ts'
+    ]
   },
 
   i18n: {
